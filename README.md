@@ -1,5 +1,7 @@
 # HP-themed-Single-Page-Application
 
+screenshot: https://github.com/xcheng981/INFO6150-final/blob/main/screenshot.gif
+
 ### Required Functionality
 Your web app MUST contain and demonstrate these features/abilities/style of writing
 
