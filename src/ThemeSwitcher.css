@@ -1,0 +1,61 @@
+.toggle {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid orangered;
+    width: 48px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-left: 3rem;
+}
+
+.toggle.active {
+    background: beige;
+    border: 2px solid rgb(135, 95, 20);
+}
+
+.toggle::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: rgb(55, 59, 62);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.active::before {
+    left: 27px;
+    background: burlywood;
+}
+
+.muggle .custom-link {
+    color: black;
+}
+
+.muggle .house-text p,
+.muggle .gryffindor-intro p,
+.muggle .hufflepuff-intro p,
+.muggle .ravenclaw-intro p,
+.muggle .slytherin-intro p {
+    color: white;
+}
+
+.muggle .faculty-card,
+.muggle .apply {
+    border: 1px solid #161111;
+}
+
+.muggle .course-card {
+    background-color: rgb(196, 196, 193);
+    border: 2px solid beige;
+}
+
+.muggle .course-card:hover {
+    background-color: #959393;
+}

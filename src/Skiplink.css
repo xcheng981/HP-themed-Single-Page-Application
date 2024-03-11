@@ -1,0 +1,17 @@
+.skiplink {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skiplink:focus {
+    opacity: 1;
+}

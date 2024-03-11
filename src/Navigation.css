@@ -1,0 +1,139 @@
+.menu {
+    background-color: rgb(83, 81, 80);
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.menu__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__item {
+    display: inline-block;
+    margin: 1rem 2rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+
+.menu__item a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown__item:hover .submenu {
+    display: block;
+    opacity: 1;
+}
+
+.submenu {
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 0.3s ease;
+    margin-top: 1rem;
+    z-index: 100;
+}
+
+.submenu__intro,
+.submenu__gryffindor,
+.submenu__hufflepuff,
+.submenu__ravenclaw,
+.submenu__slytherin {
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.submenu__intro,
+.submenu__gryffindor a,
+.submenu__hufflepuff a,
+.submenu__ravenclaw a,
+.submenu__slytherin a {
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu__intro:hover {
+    background-color: #7b7676;
+}
+
+.submenu__gryffindor:hover {
+    background-color: #850b0d;
+}
+
+.submenu__hufflepuff:hover {
+    background-color: #cc9a0f;
+}
+
+.submenu__ravenclaw:hover {
+    background-color: #254a95;
+}
+
+.submenu__slytherin:hover {
+    background-color: #2c7248;
+    ;
+}
+
+.menu__item-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu__item-triangle {
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+@media screen and (max-width: 44rem) {
+    .menu__list {
+        justify-content: flex-start;
+    }
+
+    .menu__item {
+        margin: 1rem 0;
+    }
+
+    .submenu {
+        position: static;
+        opacity: 1;
+        margin-top: 0;
+        display: none;
+    }
+
+    .menu__item:hover .submenu {
+        display: block;
+    }
+
+}

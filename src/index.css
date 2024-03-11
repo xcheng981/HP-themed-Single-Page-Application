@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #bab6b5;
+  background-image: url('https://images.unsplash.com/photo-1598046147932-c78b6d9c0905?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jose-duarte-ma48HHDJCXw-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #dcdada;
+  margin: 0;
+  padding: 0;
+}
+
+body.muggle {
+  background-image: url('https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=olga-thelavart-vS3idIiYxX0-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #050505;
+  margin: 0;
+  padding: 0;
+}

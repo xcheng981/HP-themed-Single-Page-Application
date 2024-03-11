@@ -1,0 +1,79 @@
+.apply {
+    max-width: 600px;
+    margin: 2rem auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-top: 1rem;
+}
+
+form {
+    margin: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    color: black;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.submit-button {
+    font-size: 1.2rem;
+    width: 50%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #636568;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: goldenrod;
+    -webkit-box-shadow: 10px 10px 99px 6px #d3a625;
+    -moz-box-shadow: 10px 10px 99px 6px #d3a625;
+    box-shadow: 10px 10px 99px 6px #d3a625;
+}
+
+.apply-info h3 {
+    margin: 2rem;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.apply-info p {
+    margin: 1rem;
+    color: black;
+    line-height: 2;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.required {
+    color: red;
+    margin-left: 2px;
+}

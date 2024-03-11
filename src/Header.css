@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.header__logo {
+    width: 120px;
+    height: 100px;
+    margin: 0.5rem;
+}
+
+.header__title {
+    font-size: 3rem;
+    flex: 1;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 44rem) {
+    header {
+        flex-direction: row;
+    }
+
+    .header__title {
+        margin: 0 1rem;
+    }
+}
